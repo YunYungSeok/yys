@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+function addGenerator(num) {
+	var sum = 0;
+	for (var i = 0; i <= num; i++) {
+		sum += i;
+	}
+	//num가 n까지의 합 sum
+	
+  return function ( toAdd ){
+	 console.log("toAdd num:"+sum , "toadd:"+toAdd);
+	       return sum + toAdd;
+	       //sum값에다가 두번째받는 값을 더한다!!
+	   };
+}
+
+var addFive = addGenerator(10); //num값 n까지의 합 
+console.log(addFive(8)); //저장되있는 num값에다가 다음파라메타값을 저장한다
+console.log(addFive(100)); //저장되있는 num값에다가 다음파라메타값을 저장한다
+/* 커리라는 건 먼저 전달받는 인수를 유지하고,그 다음에 들어오는 인수들을 사용하여 실제 함수를 호출하는 것 */
+//num 값의 n까지의 합을 저장되있는걸 유지시키고 , 추가적인 toAdd 값을더하는 함수
+</script>
+</head>
+<body>
+
+</body>
+</html>
