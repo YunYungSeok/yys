@@ -50,5 +50,6 @@ public class Score {
 	public String toString() {
 		return name +","+kor+"," +eng+","+  math;
 	}
-	
+	//객체가 갖고있는 정보나 값을 문자열로 보내주는 역할을한다.
+	//toString을 하지않았을경우  Class이름이 나온다.
 }
