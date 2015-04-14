@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	   <!-- java에서 import와 비슷함  -->
+	   
+	   <bean class="exam.test03.Score"/>
+	   <bean class="exam.test03.Score"/>
+	   
+	  <!-- 익명빈을 만들경우 패키지이름+클래스이름+#인덱스 를 빈의 이름으로사용한다 
+	  		exam.test03.Score#0 그다음 exam.test03.Score#1 이된다.
+	  --> 
+</beans>
