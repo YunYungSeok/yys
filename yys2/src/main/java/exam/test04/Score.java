@@ -51,5 +51,6 @@ public class Score {
 		return "Score [name=" + name + ", kor=" + kor + ", eng=" + eng
 				+ ", math=" + math + "]";
 	}
-	
+	//객체가 갖고있는 정보나 값을 문자열로 보내주는 역할을한다.
+	//toString을 하지않았을경우  Class이름이 나온다.
 }
