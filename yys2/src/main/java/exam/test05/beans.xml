@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	   <!-- java에서 import와 비슷함  -->
+		<bean id="score1" class="exam.test05.Score">
+			<property name="name"><value>홍길동</value></property>
+			<property name="kor"><value>100</value></property>
+			<property name="eng"><value>95</value></property>
+			<property name="math"><value>90</value></property>
+		</bean>
+		<!-- Java 코드로 
+			Score score1=new Score();
+			score1.setName("홍길동");
+			score1.setKor(100);
+			score1.setEng(95);
+			score1.setMath(90);
+			  -->
+			  
+		<bean id="score2" class="exam.test05.Score">
+			<property name="name" value="홍길동"/>
+			<property name="kor" value="85"/>
+			<property name="eng" value="99"/>
+			<property name="math" value="100"/>
+		</bean>
+		<!-- Java 코드로 
+			Score score2=new Score();
+			score2.setName("홍길동");
+			score2.setKor(85);
+			score2.setEng(99);
+			score2.setMath(100);
+			  -->
+		
+		
+		<!-- 인덱스0순서로 출력 -->
+</beans>

@@ -37,7 +37,6 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 			<constructor-arg value="99"/>
 		</bean>
 		
-		
 		<bean id="score5" class="exam.test04.Score">
 			<constructor-arg value="70" index="3"/>
 			<constructor-arg value="50" index="1"/>
